@@ -8,3 +8,9 @@ function EmployeeController($scope) {
     ]
   };
 }
+
+function subController($scope) {
+	$scope.employee = {
+	      name: 'John Smith'
+	};
+}

@@ -6,7 +6,7 @@
 
     <style type="text/css">
 	/* remove .doc-example-live in jsfiddle */
-		.doc-example-live .ng-scope {
+		 .ng-scope {
 		  border: 1px dashed red;
 		}
 
@@ -18,7 +18,7 @@
       Manager: {{employee.name}} [ {{department}} ]<br>
       Reports:
         <ul>
-          <li ng-repeat="employee in employee.reports">
+          <li  ng-controller="subController">
             {{employee.name}} [ {{department}} ]
           </li>
         </ul>
