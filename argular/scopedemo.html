@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="ezstuff" ng-init="name='somebody'">
   <head>
     <script src="angular.min.js"></script>
     <script src="script.js"></script>
@@ -25,5 +25,8 @@
       <hr>
       {{greeting}}
     </div>
+    <ez-namecard data="name" ng-controller="namecardCtrl"></ez-namecard>
+
+
   </body>
 </html>
