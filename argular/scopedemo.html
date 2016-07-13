@@ -25,8 +25,10 @@
       <hr>
       {{greeting}}
     </div>
-    <ez-namecard data="name" ng-controller="namecardCtrl"></ez-namecard>
 
+    global:{{name}}
+    <input type="text" ng-model="name"/>
 
+    <ez-namecard data="name" ></ez-namecard>
   </body>
 </html>

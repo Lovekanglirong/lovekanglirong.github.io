@@ -20,18 +20,21 @@ angular.module("ezstuff",[])
 	return {
 		restrict:"E",
 		replace:true,
+		scope:false,
 		template:"<div></div>",
 		link:function(scope,element,attrs){
-			var sb = scope.name;
-			element.append("<div>name:" + sb + "</div>");
-	                //ksdjfkjf	
-			//sdjafdsjf
+
+			//scope.name = 'kanglirong';
+			element.append("<div>name:" + scope.name + "</div>");
+			
+		        setInterval(function(){
+				scope.name = 'kanglirong';
+				element.append(scope.name);
+			},1000);	
 		}
+
 	}
 });
 
-function namecardCtrl($scope){
-	$scope.name = "kanglirong";
-}
 
 
