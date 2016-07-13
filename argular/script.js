@@ -34,6 +34,9 @@ angular.module("ezstuff",[])
 		}
 
 	}
+})
+.run(function($rootScope) {
+	$rootScope.someProp = "Hello wife";
 });
 
 
