@@ -9,6 +9,18 @@
   <body ng-app="ezstuff">
       <ez-clock></ez-clock>
       Hello
+
+
+
+	<div class="container" ng-controller="MyController">
+		<div class="my-info">my name is:<span ng-bind="name"></span>
+
+		    <br/>my age is:<span ng-bind="age"></span>
+		    <br />
+		</div>
+		<div class="my-directive" my-directive my-name="{{name}}" age="age"  change-my-age="changeAge()"></div>
+        </div>
+
   </body>
 </html>
 
